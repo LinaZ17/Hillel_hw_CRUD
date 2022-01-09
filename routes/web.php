@@ -17,10 +17,5 @@ use App\Models\Choice;
 Route::get('/', function () {
     return view('welcome');
 });
-//Route::get('/',function()
-//{
-//    $choices = Choice::all();
-//    return view('posts.index')->with('choices', $choices);
-//});
 
 Route::resource('post', PostController::class);
